@@ -1,5 +1,4 @@
 body {
-  /* background-color: #366336; */
   background: linear-gradient(to left, #366336, #5e8e5e);
   margin: 0;
   padding: 0 2rem;
@@ -81,6 +80,38 @@ button.submit-btn:active {
 .feedback-msg {
   display: none;
   margin-bottom: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(to left, #366336, #5e8e5e);
+    color: #003300;
+  }
+
+  .container {
+    background-color: #F7F3E7;
+    border: 1px solid #003300;
+    box-shadow: -10px 8px 5px #003300; 
+  }
+
+  button.submit-btn {
+    background-color: #366336;
+    color: white;
+  }
+
+  button.submit-btn:hover {
+    background-color: #5e8e5e;
+  }
+
+  button.submit-btn:active {
+    background-color: #4d7a4d;
+  }
+
+  .month-select {
+    background-color: #f2f2f2;
+    color: #333;
+    border-color: #366336;
+  }
 }
 
 @media (max-width: 576px) {
