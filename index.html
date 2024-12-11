@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./styles.css" rel="stylesheet">
+  <title>ANKIETA 2024</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="main-title">ANKIETA</h1>
+    <div class="form-container">
+      <!-- <h3>Please select the month of your birthday below in order to get the survey link. After selecting, you will be automatically redirected.</h3> -->
+      <h3>Wybierz swój miesiąc urodzenia</h3>
+      <form action="#" method="POST" class="select-form" id="month-form">
+        <!-- <label for="month">Miesiąc:</label> -->
+        <select id="month" name="month" class="month-select">
+          <option value="" disabled selected>-- Miesiąc --</option>
+          <option value="styczeń">Styczeń</option>
+          <option value="luty">Luty</option>
+          <option value="marzec">Marzec</option>
+          <option value="kwiecień">Kwiecień</option>
+          <option value="maj">Maj</option>
+          <option value="czerwiec">Czerwiec</option>
+          <option value="lipiec">Lipiec</option>
+          <option value="sierpień">Sierpień</option>
+          <option value="wrzesień">Wrzesień</option>
+          <option value="październik">Październik</option>
+          <option value="listopad">Listopad</option>
+          <option value="grudzień">Grudzień</option>
+        </select>
+        <p class="feedback-msg" id="warning-feedback" >Nie wybrano miesiąca</p>
+        <button type="submit" class="submit-btn">Prześlij</button>
+      </form>
+    </div>    
+  </div> 
+
+  <script src="index.js"></script>
+</body>
+</html>
